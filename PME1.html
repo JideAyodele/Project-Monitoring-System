@@ -1,0 +1,189 @@
+
+
+<html>
+<center>
+
+<img src ="Uploads\eklogo.png" id ="image1" alt ="My Image " align="top" border = "0" "> 
+
+<div class ="banner">
+<h1>Project Monitoring Management Information System<Br>
+
+</div>
+
+<BR>
+
+
+<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="PME1.php" method="POST">
+ <H2>The Project</H2>
+ <fieldset id="fs-frm-inputs" style = "justify-content: left;">
+<label for="projectname">Project Name:</label>
+<input type = "text" name ="projectname" id = "projectname" Placeholder ="Description of the project" required="" style ="width:81%;
+ align-items: left; text-align: left; line-height:22px;">
+<label for="mda">Executing MDA:</label>
+<select name="mda" required="" style ="width:79%; line-height:5px; align-items: left; text-align: left;">
+        <option value="Select" selected="" disabled="">MDA</option>
+      	<option value="Agriculture and Rural Development">Agriculture and Rural Development</option>
+      	<option value="Finance and Economic Development">Finance and Economic Development</option>
+      	<option value="Health">Health</option>
+      	<option value="Education Science and Technology">Education Science and Technology</option>
+      	<option value="Works and Transportation">Works and Transportation </option>  
+      </select>
+<label for="dateofaward">Date of Award:</label>
+<input type = "date" name ="dateofaward" id = "dateofaward" required="" style ="width:22%;">
+<label for="commencedate">Start Date:</label>
+<input type = "date" name ="commencedate" id = "commencementdate" style ="width:22%;">
+<label for="projectduration">Duration(months):</label>
+<input type = "integer" name ="projectduration" id = "timeline"  width= "4" style ="width:6%;">
+<label for="projectcost">Project Cost:</label>
+<input type = "integer" name ="projectcost" id = "projectcost" required="" style ="width:33%;">
+<label for="reviewcost">Review Cost:</label>
+<input type = "integer" name ="reviewcost" id = "reviewtcost" style ="width:34%;">
+<label for="certificate">Certificate:</label>
+<input type = "integer" name ="certificate" id = "certificate" Placeholder ="Amount in figures" style ="width:34%;">
+<label for="amountpaid">Amount Paid:</label>
+<input type = "integer" name ="agpayment" id = "agpayment" style ="width:35%;">
+
+</fieldset>
+
+<br>
+<H2>Contractor Information</H2>
+  <fieldset id="fs-frm-inputs2">
+Contractor: <input type = "text" name ="contractor" id = "contractor" maxlength="15">
+Company Address: <input type = "text" name ="companyname" id = "companyname" style ="width:36%;">
+Phone Number: <input type = "text" name ="phonenumber" id = "phonenember" maxlength="15">
+Email: <input type = "email" name ="contractoremail" id = "contractoremail" style ="width:45%;">
+</fieldset>
+ 
+<br>
+
+<H2>Project Milestones</H2>
+<fieldset id="fs-frm-milestones">
+1st Milestone: <input type = "text" name ="milestone1" id = "milestone1" style ="width:52%;" > 
+Date: <input type = "date" name ="milestone1date" id = "milestonedate1" style ="width:25%;"> 
+2nd Milestone: <input type = "text" name ="milestone2" id = "milestone2" style ="width:52%">
+Date: <input type = "date" name ="milestone2date" id = "milestonedate2" style ="width:25%">
+3rd Milestone: <input type = "text" name ="milestone3" id = "milestone3" style ="width:52%">
+Date: <input type = "date" name ="milestone3date" id = "milestonedate3" style ="width:25%">
+4th Milestone: <input type = "text" name ="milestone4" id = "milestone4" style ="width:52%">
+Date: <input type = "date" name ="milestone4date" id = "milestonedate4" style ="width:25%">
+5th Milestone: <input type = "text" name ="milestone5" id = "milestone5" style ="width:52%">
+Date: <input type = "date" name ="milestone5date" id = "milestonedate5" style ="width:25%">
+6th Milestone: <input type = "text" name ="milestone6" id = "milestone6" style ="width:52%">
+Date: <input type = "date" name ="milestone6date" id = "milestonedate6" style ="width:25%">
+7th Milestone: <input type = "text" name ="milestone7" id = "milestone7" style ="width:52%">
+Date: <input type = "date" name ="milestone7date" id = "milestonedate7" style ="width:25%">
+8th Milestone: <input type = "text" name ="milestone8" id = "milestone8" style ="width:52%">
+Date: <input type = "date" name ="milestone8date" id = "milestonedate8" style ="width:25%">
+</fieldset>
+<br>
+
+<fieldset id ="lst-fs">
+    Remarks: <textarea rows="7" name="note" id="note" placeholder="Include any additional information" style ="width:87%"></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+  </fieldset>
+  </b>
+ <br>
+ <div class ="btn-block">
+  <button type = "submit" href= "/">Register</button>
+  </div>
+
+</form>
+</center>
+<br>
+<br>
+</html>
+
+ 
+<style>
+      
+	  html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+	line-height:22px;
+      }
+	   
+      h1 {
+      position: relative;
+	  margin: 0;
+      font-size: 20px;
+      color: #fff;
+      z-index: 2;
+      }
+	  
+	  h3 {
+      position: relative;
+	  margin: 0;
+	
+      color: #fff;
+      z-index: 2;
+      }
+      
+	       
+      form {
+      width: 50%;
+      padding: 40px;
+	  
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 20px 0 #095484; 
+	  align-items: center;
+      }
+      .banner {
+      height: 50px;
+      background-image: url("/uploads/bukola.jpg");  
+      background-size: cover;
+      display: flex;
+      position: relative;
+	  justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: green; 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      input, select {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      
+      padding: 5px;
+      }
+      select {
+   
+      padding: 7px 0;
+      background: transparent;
+      }
+      
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: blue;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: purple;
+      }
+	
+    
+</style>
